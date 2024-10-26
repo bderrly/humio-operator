@@ -6,7 +6,7 @@ on:
 jobs:
   test-operator:
     name: ${{ matrix.kind-k8s-version }}
-    runs-on: [ self-hosted, ops ]
+    runs-on: [ ubuntu-latest ]
     strategy:
       fail-fast: false
       matrix:
